@@ -10,7 +10,6 @@ namespace MySecondProgram
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("I hope this fucking works");
             Console.WriteLine("Enter to continue.....");
             Console.ReadLine();
             Console.WriteLine("Hello My Name Is Supreme Overlord!");
