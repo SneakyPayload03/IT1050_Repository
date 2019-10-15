@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Couples Assingment", "Couples Assingment\Couples Assingment.csproj", "{646499E0-4B10-494B-8DBD-3ABCFD8D2C1F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{646499E0-4B10-494B-8DBD-3ABCFD8D2C1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{646499E0-4B10-494B-8DBD-3ABCFD8D2C1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{646499E0-4B10-494B-8DBD-3ABCFD8D2C1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{646499E0-4B10-494B-8DBD-3ABCFD8D2C1F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8B1A5E0-F32A-4020-99A1-93CFE7D5B0DF}
+	EndGlobalSection
+EndGlobal
