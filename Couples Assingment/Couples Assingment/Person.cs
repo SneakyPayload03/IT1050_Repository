@@ -10,20 +10,22 @@ namespace Couples_Assingment
     class Person
     {
         public Person Spouse;
-        public string SpouseFirstName;
         public string FirstName;
         public string LastName;
         public string FullName;
         public int Age;
+        public static double SumOfAllAges;
+        public static int Count;
+        public static double meanAge;
         public string GetFirstName()
         {
-            Console.WriteLine("What is your first name?");
+            Console.WriteLine("First Name: ");
             this.FirstName = Console.ReadLine();
             return this.FirstName;
         }
         public string GetLastName()
         {
-            Console.WriteLine("What is your last name?");
+            Console.WriteLine("Last Name: ");
             this.LastName = Console.ReadLine();
             return this.LastName;
         }
@@ -32,36 +34,49 @@ namespace Couples_Assingment
             FullName = this.FirstName + " " + this.LastName;
             return FullName;
         }
+
+        public int GetAge()
+        {
+            Console.WriteLine("Age: ");
+            this.Age = int.Parse(Console.ReadLine());
+            addage(Age);
+            return this.Age;
+
+        }
+        public void GetInfoSpouse()
+        {
+
+            Spouse = new Person();
+            Spouse.FirstName = Input.String("Spouse Name: ");
+            Spouse.LastName = LastName;
+            Spouse.Age = Input.Integer("Spouse Age: ");
+            //Console.WriteLine("Spouse Age?");
+            //Spouse.Age = int.Parse(Console.ReadLine());
+            addage(Spouse.Age);
+        }
         public void PrintAll()
         {
             Console.WriteLine("Name: " + this.FullName);
             Console.WriteLine("Age: " + this.Age);
-            Console.WriteLine("Spouse: " + this.Spouse);
-            Console.WriteLine("Spouse Age: " + Spouse.Age);
-
+            Console.WriteLine("Spouse: " + this.Spouse.FirstName);
+            Console.WriteLine("");
+            Console.WriteLine("Spouse Age: " + this.Spouse.Age);
+            Console.WriteLine("Sum of All Ages: " + SumOfAllAges);
+            Console.WriteLine("Average Age: " + meanAge);
         }
-        public int GetAge()
-        {
-            Console.WriteLine("How old are you?");
-            this.Age = int.Parse(Console.ReadLine());
-            return this.Age;
-        }
-        public Person GetInfoSpouse()
-        {
 
-            Spouse = new Person;
-            Console.WriteLine("Who is " + this.FullName + "'s spouse?");
-            Spouse.FirstName = 
-            this.Spouse = SpouseFirstName;
-            this.Spouse.LastName = LastName;
-            Console.WriteLine("How old is she or he?");
-            this.Spouse.Age = int.Parse(Console.ReadLine());
-            return this.Spouse;
+        public static void addage(int age)
+        {
+            Count++;
+            SumOfAllAges += age;
+            meanAge = age / Count;
+
+
         }
         
 
-         }
 
-       
+
 
     }
+}
