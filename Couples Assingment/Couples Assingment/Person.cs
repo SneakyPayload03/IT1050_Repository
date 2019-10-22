@@ -58,9 +58,10 @@ namespace Couples_Assingment
         {
             Console.WriteLine("Name: " + this.FullName);
             Console.WriteLine("Age: " + this.Age);
-            Console.WriteLine("Spouse: " + this.Spouse.FirstName);
             Console.WriteLine("");
+            Console.WriteLine("Spouse: " + this.Spouse.FirstName + " " + this.LastName);
             Console.WriteLine("Spouse Age: " + this.Spouse.Age);
+            Console.WriteLine("");
             Console.WriteLine("Sum of All Ages: " + SumOfAllAges);
             Console.WriteLine("Average Age: " + meanAge);
         }
@@ -69,7 +70,7 @@ namespace Couples_Assingment
         {
             Count++;
             SumOfAllAges += age;
-            meanAge = age / Count;
+            meanAge = SumOfAllAges / Count;
 
 
         }
