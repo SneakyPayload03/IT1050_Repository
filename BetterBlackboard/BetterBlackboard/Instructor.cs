@@ -12,25 +12,32 @@ namespace BetterBlackboard
         private string LastName= "Santos";
         private string CourseName = "IT-1050";
         Student Ariel = new Student();
-        public string SetInstructorName(string First, string Last)
+        public void SetInstructorName(string First, string Last)
         {
             this.FirstName = First;
             this.LastName = Last;
-            return this.FirstName + " " + this.LastName;
         }
-        public string SetInstructorCourses(string course)
+        public void GetInstructorName()
+        {
+            Console.WriteLine("Instructor Name: " + this.FirstName + " " + this.LastName);
+
+        }
+        public void SetInstructorCourses(string course)
         {
             this.CourseName = course;
-            return CourseName;
+        }
+        public void GetInstructorCourses()
+        {
+            Console.WriteLine("Instructor Course: " + this.CourseName);
         }
         public void SetStudentGrade(Student StudentName, int Grade)
         {
             Grade = StudentName.SetGrade();
         }
-        public void GetInstructorInfo(Student StudentName)
+        public void PrintInstructorInfo(Student StudentName)
         {
-            Console.WriteLine(this.SetInstructorName(this.FirstName, this.LastName));
-            Console.WriteLine(SetInstructorCourses(this.CourseName));
+            this.GetInstructorName();
+            this.GetInstructorCourses();
             StudentName.GetStudentName();
             
             

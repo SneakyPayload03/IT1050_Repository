@@ -17,17 +17,27 @@ namespace BetterBlackboard
         {
             return this.Grade;
         }
-        public string SetStudentName(string First, string Last)
+        public void GetGrade()
+        {
+            Console.WriteLine("Grade: " + this.Grade);
+        }
+        public void SetStudentName(string First, string Last)
         {
             this.FirstName = First;
             this.LastName = Last;
-            return this.FirstName + " " + this.LastName;
         }
         public void GetStudentName()
         {
             Console.WriteLine(this.FirstName + " " + this.LastName);
         }
+        public void GetStudentInfo(Instructor TeacherName)
+        {
+            this.GetStudentName();
+            this.GetGrade();
+            TeacherName.GetInstructorName();
+            
 
+        }
 
 
 
