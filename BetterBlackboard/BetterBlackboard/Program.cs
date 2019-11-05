@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BetterBlackboard
 {
@@ -10,6 +6,8 @@ namespace BetterBlackboard
     {
         static void Main(string[] args)
         {
+            Assingment JustDoIt = new Assingment();
+            JustDoIt.DoAll();
         }
     }
 }

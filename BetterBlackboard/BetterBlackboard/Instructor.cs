@@ -1,17 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BetterBlackboard
 {
     class Instructor
     {
-        private string FirstName = "Donnie";
-        private string LastName= "Santos";
-        private string CourseName = "IT-1050";
+        private string FirstName = "";
+        private string LastName= "";
+        private string CourseName = "";
         Student Ariel = new Student();
+
+        public void SetStudentName(Student StudentName, string First, string Last)
+        {
+            StudentName.SetStudentName(First, Last);
+        }
         public void SetInstructorName(string First, string Last)
         {
             this.FirstName = First;
@@ -32,15 +33,16 @@ namespace BetterBlackboard
         }
         public void SetStudentGrade(Student StudentName, int Grade)
         {
-            Grade = StudentName.SetGrade();
+            Ariel = StudentName;
+            StudentName.SetGrade(Grade);
         }
-        public void PrintInstructorInfo(Student StudentName)
+        public void PrintInstructorInfo(Student StudentName, Student Other)
         {
+            StudentName = Ariel;
             this.GetInstructorName();
             this.GetInstructorCourses();
             StudentName.GetStudentName();
-            
-            
+            Other.GetStudentName();
         }
     }
 }
