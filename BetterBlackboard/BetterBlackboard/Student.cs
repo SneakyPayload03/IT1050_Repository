@@ -3,11 +3,19 @@ namespace BetterBlackboard
 {
     class Student
     {
-        private string FirstName = "";
-        private string LastName = "";
-        private int Grade = 0;
+        private string FirstName;
+        private string LastName;
+        private int Grade;
+        private Instructor Donnie;
 
-        Instructor Donnie = new Instructor();
+        public Student(string firstName, string lastName, int grade)
+        {
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this.Grade = grade;
+            
+        }
+
         public void SetInstructor(Instructor InstructorName, string first, string last)
         {
             InstructorName = Donnie;
@@ -34,9 +42,10 @@ namespace BetterBlackboard
         }
         public void GetStudentInfo()
         {
+     
             this.GetStudentName();
             this.GetGrade();
-            Donnie.GetInstructorName();
+            
             
 
         }

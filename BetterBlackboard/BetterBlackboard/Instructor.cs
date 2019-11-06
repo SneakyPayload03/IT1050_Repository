@@ -4,10 +4,18 @@ namespace BetterBlackboard
 {
     class Instructor
     {
-        private string FirstName = "";
-        private string LastName= "";
-        private string CourseName = "";
-        Student Ariel = new Student();
+        private string FirstName;
+        private string LastName;
+        private string CourseName;
+        private Student Ariel;
+
+        public Instructor(string firstName, string lastName, string courseName)
+        {
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this.CourseName = courseName;
+            this.Ariel = new Student("", "", 0);
+        }
 
         public void SetStudentName(Student StudentName, string First, string Last)
         {
