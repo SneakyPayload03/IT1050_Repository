@@ -10,21 +10,22 @@ namespace PetClassAssingment
     {
         private string Name = "Natsu";
         private int Age = 400;
-        Pet Animal;
+        Pet[] pets = new Pet [3];
         
-        public PetOwner(string name, int age, Pet animal, int numberofpets, Pet petName)
+        public PetOwner(string name, int age, Pet pet)
         {
-            getName(name);
-            getAge(age);
-            new animal = Animal Pet()
+            name = getName();
+            age = getAge();
+            this.pets[0] = pet;
+            
         }
-        public void getName(string name)
+        public string getName()
         {
-            this.Name = name;
+            return this.Name
         }
-        public void getAge(int age)
+        public int getAge()
         {
-            this.Age = age;
+            return this.Age;
         }
         public void printAll()
         {

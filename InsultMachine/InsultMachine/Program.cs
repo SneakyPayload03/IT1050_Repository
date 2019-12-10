@@ -10,6 +10,16 @@ namespace InsultMachine
     {
         static void Main(string[] args)
         {
+
+            Insult insult = new Insult();
+
+
+            Console.WriteLine("Hopefully everything has executed properly...");
+
+
+
+            Console.Read();
+
         }
     }
 }

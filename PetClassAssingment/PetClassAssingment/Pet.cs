@@ -11,11 +11,12 @@ namespace PetClassAssingment
         private string Name = "Happy";
         private int Age = 6;
         private string Breed = "Flying Cat";
-        Public Pet(string name, int age, string breed)
+        public Pet(string name, int age, string breed)
         {
             this.Name = name;
             this.Age = age;
             this.Breed = breed;
+            
             
         }
         public void printAll()

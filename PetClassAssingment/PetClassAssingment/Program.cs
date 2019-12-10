@@ -10,7 +10,6 @@ namespace PetClassAssingment
     {
         static void Main(string[] args)
         {
-
         }
     }
 }

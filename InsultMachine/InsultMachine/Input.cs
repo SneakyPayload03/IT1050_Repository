@@ -8,21 +8,22 @@ namespace InsultMachine
 {
     class Input
     {
-        public static string getName()
+        public static string getName(string Name)
         {
             Console.WriteLine("What is your nickname?");
-            return Console.ReadLine();
+            return Name = Console.ReadLine();
 
         }
-        public static int getAge()
+        public static int getAge(int Age)
         {
             Console.WriteLine("How old and decrepit are you?");
-            return int.Parse(Console.ReadLine());
+            return Age = int.Parse(Console.ReadLine());
         }
-        public static bool getAlumStatus()
+        public static bool getAlumStatus(bool Alumni)
         {
             Console.WriteLine("Did they let you graduate from high school?");
-            return bool.Parse(Console.ReadLine());
+            Console.WriteLine("[true or false]");
+            return Alumni = bool.Parse(Console.ReadLine());
         }
         public static bool getIntelligence(bool Intelligence)
         {
